@@ -1,0 +1,31 @@
+nav.navbar.fixed-top.navbar-expand-lg.navbar-light(style='max-width: 100%')
+  a.navbar-brand.text-light(href='/home' style='margin-left:15vw !important')
+    img.brandlogo(src='../img/home/brand-logo.png')
+  button.navbar-toggler.bg-white(style='margin-right:15vw' type='button' data-toggle='collapse' data-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarNavAltMarkup.collapse.navbar-collapse
+    ul.nav.nav1.navbar-nav.ml-auto(style='margin-right:15vw !important')
+      li
+        a.nav-item.nav-link.text-light(href='/home')
+          | Home 
+          span.sr-only (current)
+      li
+        a.nav-item.nav-link.text-light(href='/team') Team
+      li
+        a.nav-item.nav-link.active.text-light(href='/about-us') About Us
+      li
+        a.nav-item.nav-link.text-light(href='/contact-us') Contact
+      li
+        a.nav-item.nav-link.text-light(href='/car-catalogue') Cars
+      if user
+        li
+          a.d-flex(href="/#").img-parent 
+            img(src="/img/team/team-mem-min/team-mem-thumb-1.png" style="border:2px solid; border-radius:50%; height:8vh !important;", alt="", srcset="").img_profile
+            .username #{user.fName} 
+        li
+          a.nav-item.nav-link.text-light(href='#').logout LogOut
+      else
+        li 
+          a.nav-item.nav-link.text-light(href='/signup') SignUp
+        li 
+          a.nav-item.nav-link.text-light(href='/login') Login
