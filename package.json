@@ -23,14 +23,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheAlpher/clgproject.git"
+    "url": "git+https://github.com/agam-99/Auto-Haven.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TheAlpher/clgproject/issues"
+    "url": "https://github.com/agam-99/Auto-Haven/issues"
   },
-  "homepage": "https://github.com/TheAlpher/clgproject#readme",
+  "homepage": "https://github.com/agam-99/Auto-Haven#readme",
   "description": ""
 }
